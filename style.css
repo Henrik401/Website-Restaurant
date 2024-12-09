@@ -1,6 +1,32 @@
-* {
+ * { /* * selected all elements */
   margin: 0;
   padding: 0;
+}
+body{
+  color:white;
+  background-color: #1a1818;
+  height: 200vh;
+}
+.navi-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+}
+.navi-item{
+  padding: 2rem;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+}
+.navi-link {
+  color:white;
+  text-decoration: none;
+}
+.navi-link:hover {
+  color: #ec0a0a;
+  transition-duration: 0.7s;
 }
 .hero-image {
   background-image: url("hero.jpg");
@@ -10,65 +36,77 @@
 }
 h1, 
 h2 {
-  height: 100px;
+  height: 7rem;
   /* for less space betwenn "Pizzeria" and "Mamma Mia" */
 }
 .hero-section {
-  height: 100vh;
+  height: 91vh;
   display: grid;
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
+  /*background: linear-gradient(0deg, rgba(0,0,0,0.7),rgba(0,0,0,0.7) url("./images/hero.jpeg"));*/
 }
 
 .hero-text {
-  color: white;
+  /* color: white; */
   display: flex;
   justify-content: center;
   font-family: "Alex Brush";
-  font-size: 100px;
+  font-size: 7rem;
   text-align: center;
 }
 h3 {
-  margin-top: 25px;
+  margin-top: 1rem;
   font-family: "Courier New", Courier, monospace;
-  color: white;
-  font-size: 20px;
+  color: #ddd;
+  font-size: 1.5rem;
   text-align: center;
 }
 .cta-button {
-  margin-top: 50px;
-  padding: 20px;
-  border: 1px solid rgb(236, 10, 10);
-  background-color: rgb(236, 10, 10);
-  font-size: 20px;
+  margin-top: 2rem;
+  /* padding: 1.3rem; */
+  padding: 1.3rem 2rem 1.3rem 2rem; /*top right bottom left*/
+  border: 1px solid #ec0a0a; /*#ff3030*/
+  background-color: #ec0a0a;
+  font-size: 1rem;
+
 }
 .cta-button:hover {
   background: rgba(0, 0, 0, 0);
+  /* or background-color: transparent; */
   transition-duration: 0.7s;
+  /*or transition: all 0.2s ease-in-out) */
 }
 
 .cta-button:hover .cta-link {
   transition-duration: 0.7s;
-  color: rgb(236, 10, 10);
+  color: #ec0a0a;
 
   font-family: Arial;
+}
+.cta-link{
+  text-decoration: none;
+
 }
 .cta-link:not(:hover) {
-  color: white;
+  color: #ddd;
   font-family: Arial;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 615px) {
   .hero-text {
-    font-size: 60px;
+    font-size: 5rem;
   }
   h1,
   h2 {
-    height: 60px;
+    height: 5rem;
   }
-  @media only screen and (max-width: 315px) {
+  .cta-button{
+    padding: 1rem;
+  }
+  @media only screen and (max-width: 420px) {
   h3 {
-    font-size: 15px;
-    margin-top: 100px;
+    font-size: 1rem;
+    margin-top: 7rem;
   }
 }
