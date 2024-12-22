@@ -48,7 +48,7 @@ body {
   display: flex;
   /* background: rgba(0, 0, 0, 0.7); */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./hero.jpg");
+    url("./images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -180,7 +180,7 @@ h2 {
 .oeffnungszeiten {
   margin: 4rem 0 3rem 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./eier-mehl.jpg");
+    url("./images/eier-mehl.jpg");
   height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
