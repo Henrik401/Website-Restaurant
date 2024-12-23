@@ -15,7 +15,7 @@ body {
 
 .navi-line,
 .footer-links {
-  height: 10vh;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,8 +43,8 @@ body {
 
 .hero-section {
   /* background-image: url("hero.jpg"); */
-  /* height: calc(100vh - 5rem); */
-  height: 90vh;
+  height: calc(100vh - 5rem);
+  /* height: 90vh; */
   display: flex;
   /* background: rgba(0, 0, 0, 0.7); */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -67,8 +67,8 @@ body {
 }
 
 p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 0.9rem;
+  font-family: var(--text-family);
+  font-size: 1.1rem;
   text-align: center;
   line-height: 1.5rem;
   color: var(--text-color);
@@ -128,7 +128,7 @@ h2 {
   line-height: 1.1rem;
   color: var(--text-color);
   font-family: var(--text-family);
-  width: 85vw;
+  /* width: 23rem; */
   font-size: 1rem;
 }
 
@@ -148,64 +148,52 @@ h2 {
   max-width: 100%;
 }
 
-.trattoria {
-  grid-column: 1;
-  grid-row: 1 / 3;
-  /* min-height: 15.5rem; */
-  justify-self: left;
+.image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.trattoria {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
 .gesellschaft {
   grid-column: 2/3;
   grid-row: 1/2;
-  width: 100%;
-  min-height: 7.5rem;
-  height: 100%;
-  object-fit: cover;
 }
 
 .pizza {
   grid-column: 2/3;
   grid-row: 2/3;
   align-self: flex-end;
-  min-height: 7.5rem;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .oeffnungszeiten {
-  margin: 4rem 0 3rem 0;
+  margin: 4rem 0;
+  padding: 2rem 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./images/eier-mehl.jpg");
-  height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#headline-zeiten {
-  align-self: self-end;
 }
 
 .table {
   display: flex;
   gap: 8rem;
   justify-content: center;
-  align-self: self-start;
 }
 
 .day {
   display: flex;
   justify-content: left;
   text-align: left;
-  /* line-height: 2rem; */
   color: var(--text-color);
   font-family: var(--text-family);
   font-size: 1.1rem;
@@ -223,8 +211,7 @@ h2 {
 .contact {
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  margin: 3rem 0 2rem 0;
+  margin-bottom: 3rem;
   height: max-content;
 }
 
@@ -261,7 +248,7 @@ h2 {
 }
 
 .footer-section {
-  height: 25vh;
+  height: 15rem;
   background-color: #3b3939;
   display: flex;
   justify-content: center;
@@ -320,7 +307,6 @@ h2 {
   }
 
   .contact-image {
-    /* margin-right: 2rem; */
     align-self: center;
     justify-self: center;
     width: 60%;
@@ -354,11 +340,10 @@ h2 {
   }
 
   .about {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    display: flex;
-    margin: 6rem 0 6rem 0;
-    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     align-items: center;
     gap: 2rem;
   }
@@ -381,17 +366,15 @@ h2 {
   }
 
   #text-ueber-uns {
-    max-width: 37vw;
     font-size: 1.1rem;
   }
 
   .oeffnungszeiten {
-    margin: 7rem 0 8rem 0;
-    height: 55vh;
+    margin: 8rem 0;
   }
 
   .table {
-    gap: 12.5rem;
+    gap: 12rem;
   }
 
   .day {
@@ -408,7 +391,6 @@ h2 {
   }
 
   .contact-image {
-    align-self: center;
     width: 50%;
   }
 
